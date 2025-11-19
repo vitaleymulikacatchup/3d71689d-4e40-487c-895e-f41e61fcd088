@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import { PostHogWrapper } from "@/components/PostHogWrapper";
 import Tag from "@/tag/Tag";
 
-const lora = Lora({
-  variable: "--font-lora",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
 });
 
@@ -47,7 +47,7 @@ export default function RootLayout({
     <html lang="en">
       <PostHogWrapper>
         <body
-          className={`${lora.variable} antialiased`}
+          className={`${nunito.variable} antialiased`}
         >
           <Tag />
           {children}
