@@ -59,6 +59,10 @@ export default function LandingPage() {
           textboxLayout="default"
           gridVariant="three-columns-all-equal-width"
           animationType="slide-up"
+          buttons={[
+            { text: "Schedule Private Viewing", href: "contact" },
+            { text: "View Full Inventory", href: "https://elitemotors.com/inventory" }
+          ]}
           products={[
             {
               id: "1",
